@@ -22,7 +22,7 @@ enum PlantType {
   water
 }
 
-//todas las clases que extiendan
+//todas las clases que extiendan tendran estos metodos y atributos 
 abstract class EnergyPlant {
   double energyLeft;
   final PlantType type; // nuclear, wind , water
@@ -38,7 +38,7 @@ abstract class EnergyPlant {
   
 }
 
-//extends 
+//extends  implemento  todos los metodos 
 class WindPlant extends EnergyPlant {
   
   WindPlant({ required double initialEnergy})
@@ -51,7 +51,7 @@ class WindPlant extends EnergyPlant {
   
 }
 
-//necesitamos depender solo de abstraciones para implementar solo un metodo
+//necesitamos depender solo de abstraciones para implementar solo un metodo o los que yo necesito
 class NuclearPlant implements EnergyPlant{
   @override
   double energyLeft;
